@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Birthday Letter for You ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 35px 15px;
+      background: linear-gradient(135deg, #f9dce7, #f6e8ef, #e9dff7);
+      font-family: "Playfair Display", Georgia, serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #59404b;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .intro h1 {
+      font-size: clamp(25px, 5vw, 38px);
+      color: #a94f75;
+      margin-bottom: 8px;
+    }
+
+    .intro p {
+      font-family: "Caveat", cursive;
+      font-size: 23px;
+      margin: 0;
+      color: #9b6c80;
+    }
+
+    .paper {
+      position: relative;
+      width: 100%;
+      max-width: 720px;
+      min-height: 900px;
+      padding: 65px 65px 55px;
+      background-color: #fffefa;
+      background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 31px,
+        rgba(208, 170, 185, 0.12) 32px
+      );
+      box-shadow: 0 12px 35px rgba(96, 52, 73, 0.18);
+      border: 1px solid #f2e4e8;
+      animation: paperAppear 1s ease;
+    }
+
+    .paper::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid #e9c5d3;
+      pointer-events: none;
+    }
+
+    .top-decoration {
+      text-align: center;
+      font-size: 27px;
+      color: #c77b9a;
+      margin-bottom: 12px;
+    }
+
+    .date {
+      text-align: right;
+      font-family: "Caveat", cursive;
+      font-size: 23px;
+      color: #997180;
+      margin-bottom: 35px;
+    }
+
+    .greeting {
+      font-family: "Caveat", cursive;
+      font-size: 35px;
+      color: #a94f75;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-family: "Caveat", cursive;
+      font-size: 25px;
+      line-height: 1.65;
+      color: #55434a;
+    }
+
+    .message p {
+      margin: 0 0 22px;
+    }
+
+    .signature-intro {
+      font-family: "Caveat", cursive;
+      font-size: 24px;
+      margin-top: 32px;
+    }
+
+    .signature {
+      font-family: "Caveat", cursive;
+      font-size: 36px;
+      font-weight: 600;
+      color: #a94f75;
+      margin-top: 5px;
+    }
+
+    .bottom-decoration {
+      text-align: center;
+      font-size: 25px;
+      color: #c77b9a;
+      margin-top: 30px;
+      letter-spacing: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      font-family: "Caveat", cursive;
+      font-size: 21px;
+      color: #95697c;
+      margin-top: 25px;
+    }
+
+    @keyframes paperAppear {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 22px 10px;
+      }
+
+      .paper {
+        padding: 48px 30px 40px;
+        min-height: 750px;
+      }
+
+      .paper::before {
+        inset: 10px;
+      }
+
+      .greeting {
+        font-size: 30px;
+      }
+
+      .message {
+        font-size: 22px;
+        line-height: 1.6;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .intro {
+        display: none;
+      }
+
+      .paper {
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="intro">
+    <h1>A Little Letter para saimoha Yasha</h1>
+    <p> Because its your special day</p>
+  </header>
+
+  <main class="paper">
+
+    <div class="top-decoration">♡ ✧ ♡ ✧ ♡</div>
+
+    <div class="date" id="date">October 10, 2026</div>
+
+    
+
+    <section class="message">
+      <p>Happy Birthday Yasha!</p>
+
+      <p>
+        Happy Birthday Yasha! I wish you the best in life and I hope nga you'll get what you
+        wish for. now that your turning 18, I hope you know how special you are and how much you
+        deserve all good the good things life has to offer. I hoope you grow into a person you want to be
+        (Move on na ey HHAHHAHAHAHA) 
+      </p>
+        
+      <p>Enjoy your special day and NEVER FORGET that you DESERVE TO BE HAPPY. Happy Birthdayy once again
+        Yasha Take care always</p>
+      
+    </section>
+
+    <div class="signature-intro">
+      Your barkada,
+    </div>
+
+    <div class="signature" id="signature">
+      Paul Benedict Aton
+    </div>
+
+    <div class="bottom-decoration">♡ ❀ ♡</div>
+
+  </main>
+
+  <div class="footer">
+    A little reminder that you are appreciated. 🌷
+  </div>
+
+  
+
+<script>
+  const music = new Audio("./Beabadobee.mp3");
+  music.loop = true;
+  music.volume = 0.5;
+
+  document.addEventListener("click", function startMusic() {
+    music.play().catch(error => {
+      console.error("Music error:", error);
+    });
+  }, { once: true });
+</script>
+```
+
+  
+</body>
+</html>
